@@ -28,11 +28,23 @@ body{
     
 }
 .bg-button{
-    width: 1em;
+    width: 20px;
+    height: 20px;
 }
 .arrow{
-    width: 1em;
+    width: 16px;
+    height: 16px;
+    align-content: center;
+    transform: translateX(5px) translateY(3px);
+   
 }
+
+.bulgarian{
+    align-content: flex-start;
+    margin: 0;
+    font-family: montserrat;
+}
+
 
 /* header styles */
 
@@ -44,6 +56,8 @@ body{
 }
 
 .button{
+    height: 35px;
+    width: 130px;
     background-color: #0DCC00; 
     border: none;
     color: white;
@@ -54,11 +68,45 @@ body{
     font-size: 16px;
     border-radius: 100px;
     margin-right: 20px;
+    position: relative;
 }
 
 .button:hover{
     cursor: pointer;
 }
+.yes{
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.no{
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px){
+
+    .button{
+        height: 40px;
+        width: 150px;
+        margin-right: 50px;
+    }
+
+    .yes{
+        top: 11px;
+        left: 3px;
+    }
+
+}
+
 
 /* button styles */
 
@@ -88,6 +136,11 @@ h2{
     justify-content: center;
 }
 
+.row-two{
+    width: 100px;
+    border-bottom: 4px solid #0DCC00;
+}
+
 .row-two:nth-child(1){
     align-content: center;
 }
@@ -99,18 +152,14 @@ h2{
 
 .back{
     display: inline;
-    font-weight: bold;
     font-size: large;
-    width: fit-content;
-    border-bottom: 5px solid #0DCC00;
+    color: #313131;
 }
 
 .next{
     display: inline;
-    font-weight: bold;
     font-size: large;
-    width: fit-content;
-    border-bottom: 5px solid #0DCC00;
+    color: #313131;
 }
 
 .back:hover{
@@ -128,5 +177,19 @@ h2{
 .right-arrow{
     width: 0.8em;
     transform: rotate(180deg);
+}
+
+@media screen and (min-width: 700px){
+
+    .row-two{
+        transform: translateY(-50px);
+    }
+
+}
+
+.footer{
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(143, 143, 143);
 }
 /* main area styles */
